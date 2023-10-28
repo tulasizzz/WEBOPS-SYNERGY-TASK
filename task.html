@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE - CHALADI TULASI</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Position of Responsibility</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p class="header-description">Graphic Designer</p>
+                <h1>Hi,<br>I'm <span>CHALADI TULASI</span></h1>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg" alt="About Me">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello! I'm CHALADI TULASI, a student at NIT Trichy, pursuing a degree in Mechanical Engineering. My passion lies in the world of graphic design, where I love to create visually captivating artwork. Additionally, I'm an enthusiastic web development enthusiast, always eager to explore the ever-evolving web technologies.<br>  <br>
+
+                            In the dynamic intersection of art and technology, I find my true calling. Whether it's crafting sleek and user-friendly websites or bringing ideas to life with stunning graphics, I relish the challenge of transforming concepts into digital realities.<br>  <br>
+                            
+                            My journey at NIT Trichy has not only enriched my understanding of mechanical engineering but has also fueled my curiosity for innovation. It's a journey of continuous learning and self-discovery, and I'm excited to see where it takes me.<br>  <br>
+                            
+                            Beyond the academic and creative realms, I'm a firm believer in the power of collaboration. I thrive in team environments, where I can contribute my unique perspective and learn from others. Through my diverse experiences, I've come to appreciate the synergy that diverse skill sets can bring to any project.<br>  <br>
+                            
+                            So, come along and explore the world of design, development, and engineering with me. Let's embark on a journey of growth, knowledge, and creativity together!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphic Designing</span><br>Designing of posters.</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development enthusiast</span><br>Developing websites using HTML/CSS/JAVA SCRIPT (FRONT END)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>FRESHER</span><br>Ready to Work as an intern.</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-current</span><br>NATIONAL INSTITUTE OF TECHNOLOGY,TIRUCHIRAPPALLI <br>Btech Mechanical Engineering</li>
+                                <li><span>2020-2022</span><br>NARAYANA JUNIOR COLLEGE,VIJAYAWADA <br>Higher secondary education in PCM</li>
+                                <li><span>2017-2020</span><br>VISWABHARATI SCHOOL,GUDIVADA <br>Secondary schooling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                    
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+         </script>
+</body>
+</html>
+    
